@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sneakers Product Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+  <!-- Navbar -->
+  <header>
+   <nav>
+    <div class="menu-icon" id="menu-icon">
+      <img src="./images/icon-menu.svg" alt="Menu">
+    </div>
+   <div class="logo">sneakers</div>
+   <ul class="nav-links">
+    <li>Collections</li>
+    <li>Men</li>
+    <li>Women</li>
+    <li>About</li>
+    <li>Contact</li>
+   </ul>
+   <div class="cart-container">
+    <img src="./images/icon-cart.svg" alt="Cart" class="cart-icon" id="cart-btn">
+    <div class="cart-popup" id="cart-popup">
+      <p id="c">Cart</p>
+      <hr id="cart-title">
+      <p id="P">Your cart is empty.</p>
+    </div>
+    <img src="./images/image-avatar.png" alt="Profile" class="profile-pic">
+   </div>
+  
+</nav>
+
+<!-- New menu div -->
+<div class="mobile-menu" id="mobile-menu">
+  <img src="./images/icon-close.svg" alt="Profile" id="cross">
+  <ul class="nav-links">
+    <li>Collections</li>
+    <li>Men</li>
+    <li>Women</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
+</div>
+
+    <hr id="hr">
+  </header>
+
+  <!-- Product Section -->
+  <main>
+    <section class="product">
+      <div class="product-images">
+       <div id="Mprev"> <button class="prev" id="mprev"><img class="arrow" src="./images/icon-previous.svg"></button></div>
+        <img src="./images/image-product-1.jpg" alt="Sneakers" class="main-image"  id="main-image">
+        <div id="Mnext">  <button class="next" id="mnext"><img  class="arrow" src="./images/icon-next.svg"></button></div>
+        <div class="thumbnails">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail 1" class="thumbnail">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="Thumbnail 2" class="thumbnail">
+          <img  src="./images/image-product-3-thumbnail.jpg" alt="Thumbnail 3" class="thumbnail">
+          <img  src="./images/image-product-4-thumbnail.jpg" alt="Thumbnail 4" class="thumbnail">
+        </div>
+      </div>
+
+    <div class="product-details">
+        <h3>SNEAKER COMPANY</h3>
+        <h1>Fall Limited Edition <br> Sneakers</h1>
+        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        
+        <div class="price">
+          <div>
+            <span class="current-price">$125.00</span>
+            <span class="discount">50%</span>
+          </div>
+          <div>
+            <span class="original-price">$250.00</span>
+          </div>
+        </div>
+        
+
+        <div class="cart-controls">
+          <div class="quantity">
+            <button id="decrease">-</button>
+            <span id="quantity">1</span>
+            <button id="increase">+</button>
+          </div>
+          <button class="add-to-cart" id="add-to-cart-btn"> <img src="./images/icon-cart.svg" alt="Cart" class="cart-icon" id="cartbtn">
+            Add to cart</button>
+        </div>
+      </div>
+    </section>
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox-content">
+        <span class="close" id="close-lightbox">&times;</span>
+        <button class="prev" id="prev"><img class="arrow" src="./images/icon-previous.svg"></button>
+        <img id="lightbox-image" src="" alt="Large view">
+        <button class="next" id="next"><img  class="arrow" src="./images/icon-next.svg"></button>
+        <div class="lightbox-thumbnails">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail 1" class="lightbox-thumbnail">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="Thumbnail 2" class="lightbox-thumbnail">
+          <img src="./images/image-product-3-thumbnail.jpg" alt="Thumbnail 3" class="lightbox-thumbnail">
+          <img src="./images/image-product-4-thumbnail.jpg" alt="Thumbnail 4" class="lightbox-thumbnail">
+        </div>
+      </div>
+    </div>
+    
+  </main>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
