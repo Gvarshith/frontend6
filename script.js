@@ -43,9 +43,17 @@ function updateCartDisplay() {
       <p id="P">Your cart is empty.</p>`;
     })
     // Attach event listener to the checkout button
-    document.getElementById('checkout').addEventListener('click', function() {
-      cartPopup.style.display = 'none'; // Close the cart popup
-      location.reload(); // Refresh the page
+    document.getElementById('checkout').addEventListener('click', function(event) {
+      cartPopup.style.display = 'none'; 
+      event.preventDefault(); 
+    confetti({
+        particleCount: 110,
+        spread: 100,
+        origin: { y: 1 }
+    });
+    setTimeout(() => {
+    location.reload();
+  }, 3000); 
     });
   }
 }
@@ -225,5 +233,7 @@ document.getElementById('mnext').addEventListener('click', function() {
   }
   mainImage.src = mainimg[v];
 });
+
+
 
 

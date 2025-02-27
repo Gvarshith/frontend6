@@ -137,6 +137,7 @@ nav {
 .current-price {
   font-size: 24px;
   font-weight: bold;
+  margin-right: 10px;
 }
 
 .discount {
@@ -417,7 +418,7 @@ nav {
 }
 
 .nav-links li {
-  margin-right: 10px;
+  margin-right: 25px;
   cursor: pointer;
   font-weight: 500;
   opacity: 100%;
